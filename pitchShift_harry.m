@@ -47,9 +47,9 @@ if size(wObj.signal, 2)>1, error('Stereo sound is not supported in %s!\n', mfile
 durationRatio=2^(opt.pitchShiftAmount/12);
 switch(opt.method)
 	case 'wsola'
-		wsolaOpt=wsola('defaultOpt');
+		wsolaOpt=wsola_harry('defaultOpt');
 		wsolaOpt.durationRatio=durationRatio;
-		wObj2=wsola(wObj, wsolaOpt);
+		wObj2=wsola_harry(wObj, wsolaOpt);
 	case 'phaseVocoder'
 		wObj2=wObj;
 		wObj2.signal=pvoc(wObj2.signal, 1/durationRatio, 1024);
