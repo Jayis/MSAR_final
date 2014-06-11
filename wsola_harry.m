@@ -39,7 +39,7 @@ if nargin==1 && ischar(wObj) && strcmpi(wObj, 'defaultOpt')	% Set the default op
 	wObj2.durationRatio=2;		% 設定拉長或縮短的倍數
 	wObj2.frameDuration=0.01;	% 通常一個frame為10ms
 	wObj2.searchRangeRatio=0.4;	% 設定搜尋範圍, 通常是frameSize 的 0.4倍
-	wObj2.trim=1;
+	wObj2.trim=0;
 	return
 end
 if nargin<2||isempty(opt), opt=feval(mfilename, 'defaultOpt'); end
