@@ -7,7 +7,7 @@ if length(SongList) == 1 % demo one
     btOpt = myBtOptSet;
     showPlot = 1;
     cBeat = myBt(wObj, btOpt, showPlot);
-    bPair = cBeat;
+    bPair = round(cBeat * wObj.fs);
 %   tempWaveFile=[tempname, '.wav'];
 %	tickAdd(wObj, bPair, tempWaveFile);
 %	dos(['start ', tempWaveFile]);
