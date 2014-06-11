@@ -1,9 +1,5 @@
 function btOpt=myBtOptSet
 
-addpath C:\Users\Weber\Desktop\utility
-addpath C:\Users\Weber\Desktop\machineLearning
-addpath C:\Users\Weber\Desktop\sap
-
 btOpt.waveDir='shortClip4bt';
 btOpt.wingRatio=0.084;		% One-side tolerance for beat position identification via forward/forward search (only for constant tempo)
 btOpt.bpmMax=182;
